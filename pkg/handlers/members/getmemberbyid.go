@@ -16,5 +16,5 @@ func (h handler) GetMemberbyId(c *gin.Context) {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
-	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "member not found"})
+	c.JSON(http.StatusOK, &member)
 }

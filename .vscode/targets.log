@@ -1,235 +1,261 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
-# GNU Make 4.2.1
+# GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul  6 09:34:22 2022
+# Make data base, printed on Wed Jul  6 10:29:52 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# automatic
-?F = $(notdir $?)
-# environment
-DESKTOP_SESSION = ubuntu
-# default
-.SHELLFLAGS := -c
-# environment
-XDG_SESSION_CLASS = user
-# environment
-XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# environment
-IM_CONFIG_PHASE = 1
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-XAUTHORITY = /run/user/1001/gdm/Xauthority
-# environment
-GDMSESSION = ubuntu
-# environment
-XMODIFIERS = @im=ibus
-# makefile
-CURDIR := /home/brisa/samuel/api-go-postgres
-# makefile
-SHELL = /bin/sh
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-_ = /usr/bin/dbus-update-activation-environment
-# environment
-JOURNAL_STREAM = 8:53745
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# automatic
-@F = $(notdir $@)
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/github-desktop.desktop
-# environment
-USERNAME = brisa
-# environment
-MAKELEVEL := 0
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-LC_CTYPE = pt_BR.UTF-8
-# environment
-MANAGERPID = 2535
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-77c2bf95-325c-4ca2-9512-39570d796e4b.sock
-# environment
-LC_NAME = pt_BR.UTF-8
-# environment
-VSCODE_CWD = /home/brisa
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# environment
-GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
-# environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/2755,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/2755
-# environment
-XDG_RUNTIME_DIR = /run/user/1001
-# environment
-XDG_MENU_PREFIX = gnome-
-# environment
-VSCODE_LOG_STACK = false
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = ef4430871162496c968efea9afb62415
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# environment
-SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3217
-# automatic
-%F = $(notdir $%)
-# environment
-DISPLAY = :0
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /home/brisa/samuel/api-go-postgres
-# default
-.LOADED := 
-# environment
-SSH_AGENT_PID = 2716
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
-# environment
-GTK_MODULES = gail:atk-bridge
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-HOME = /home/brisa
-# environment
-VSCODE_CLI = 1
-# environment
-VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
-# environment
-LOGNAME = brisa
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# automatic
-+F = $(notdir $+)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-LC_TIME = pt_BR.UTF-8
-# default
-MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
-# environment
-QT_IM_MODULE = ibus
-# environment
-SHLVL = 0
-# environment
-LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# default
-MAKE_VERSION := 4.2.1
-# environment
-USER = brisa
-# environment
-LC_MONETARY = pt_BR.UTF-8
-# makefile
-.DEFAULT_GOAL := server
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-LC_TELEPHONE = pt_BR.UTF-8
-# default
-MAKE_COMMAND := make
-# default
-.VARIABLES := 
-# automatic
-*F = $(notdir $*)
-# environment
-LANGUAGE = en_US:
-# environment
-VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.68.1-main.sock
-# makefile
-MAKEFLAGS = pqrR
-# environment
-MFLAGS = -pqrR
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
 # environment
 GDK_BACKEND = x11
 # environment
-LC_PAPER = pt_BR.UTF-8
-# environment
-QT_ACCESSIBILITY = 1
-# default
-MAKEFILES := 
-# environment
-LC_NUMERIC = pt_BR.UTF-8
-# automatic
-<F = $(notdir $<)
-# environment
-LC_MEASUREMENT = pt_BR.UTF-8
-# environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b22df613-afcc-46b5-901d-be8a5b476fde.sock
+# environment
+VSCODE_CWD = /home/brisanet
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+GOPATH = /home/brisanet/go
 # automatic
-^F = $(notdir $^)
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
-SUFFIXES := 
+.VARIABLES := 
 # environment
-CHROME_DESKTOP = code-url-handler.desktop
+PWD = /home/brisanet/Área de Trabalho/samuel/api-go-postgres
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
 # environment
-WINDOWPATH = 2
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
 # environment
-LC_IDENTIFICATION = pt_BR.UTF-8
-# default
-.RECIPEPREFIX := 
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
 # environment
-LC_ADDRESS = pt_BR.UTF-8
+VSCODE_CODE_CACHE_PATH = /home/brisanet/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4393
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.V2QQO1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/brisanet/Área de Trabalho/samuel/api-go-postgres
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 9500
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/brisanet-OptiPlex-5090:@/tmp/.ICE-unix/1714,unix/brisanet-OptiPlex-5090:/tmp/.ICE-unix/1714
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = iu3MAV2Chtz64BoQQRRHpncAmH-ufJUfBG9atDHKR5hQI8VJshx6
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = pt_BR:pt:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/brisanet/snap/code/common
+# environment
+SNAP = /snap/code/99
+# environment
+INVOCATION_ID = cefdafe5dc93430c904282994737e493
+# environment
+SNAP_REVISION = 99
+# environment
+SNAP_REAL_HOME = /home/brisanet
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = brisanet
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = brisanet
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/github-desktop.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := server
+# environment
+SYSTEMD_EXEC_PID = 1733
+# environment
+DISPLAY = :0
+# environment
+USER = brisanet
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/99
+# environment
+SNAP_CONTEXT = iu3MAV2Chtz64BoQQRRHpncAmH-ufJUfBG9atDHKR5hQI8VJshx6
+# environment
+MANAGERPID = 1558
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2715
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/brisanet/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:28021
+# environment
+GOMODCACHE = /home/brisanet/go/pkg/mod
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/brisanet
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-8fea38a1-1.68.1-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 30d9c6cd
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+SNAP_USER_DATA = /home/brisanet/snap/code/99
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=108/1024=11%, Rehash=0, Collisions=22/133=17%
+# Load=121/1024=12%, Rehash=0, Collisions=5/151=3%
 
 # Pattern-specific Variable Values
 
@@ -237,7 +263,7 @@ VSCODE_PID = 4393
 
 # Directories
 
-# . (device 66307, inode 5770028): 11 files, no impossibilities.
+# . (device 66308, inode 3420343): 11 files, no impossibilities.
 
 # 11 files, no impossibilities in 1 directories.
 
@@ -248,16 +274,9 @@ VSCODE_PID = 4393
 # Files
 
 # Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 09:24:07.141959974
+#  Last modified 2022-07-06 10:07:22.738545092
 #  File has been updated.
 #  Successfully updated.
 
@@ -268,11 +287,18 @@ server:
 #  recipe to execute (from 'Makefile', line 2):
 	go run cmd/main.go
 
- 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
 #  File has not been updated.
 
 # files hash-table stats:
@@ -288,7 +314,7 @@ server:
 
 # strcache performance: lookups = 22 / hit rate = 22%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Wed Jul  6 09:34:22 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
+# Finished Make data base on Wed Jul  6 10:29:52 2022
 
  
