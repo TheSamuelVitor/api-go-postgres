@@ -9,6 +9,7 @@ import (
 
 type AddProjectRequestBody struct {
 	Name_project string `json:"name_project"`
+	Id_Team      int    `json:"id_team"`
 }
 
 func (h handler) PostProjects(c *gin.Context) {
@@ -23,6 +24,7 @@ func (h handler) PostProjects(c *gin.Context) {
 	var newProject models.Project
 
 	newProject.Name_project = body.Name_project
+	newProject.Id_Team = body.Id_Team
 
 	if result := h.DB.Create(&newProject); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

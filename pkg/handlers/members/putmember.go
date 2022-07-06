@@ -9,12 +9,12 @@ import (
 
 type UpdateMemberRequestBody struct {
 	Name_member string `json:"name_member"`
-	Id_Team     string `json:"id_team"`
-	Id_Task     string `json:"id_task"`
+	Id_Team     int    `json:"id_team"`
+	Id_Task     int    `json:"id_task"`
 }
 
 func (h handler) PutMembers(c *gin.Context) {
-	id :=c.Param("id")
+	id := c.Param("id")
 	body := UpdateMemberRequestBody{}
 
 	if err := c.BindJSON(&body); err != nil {

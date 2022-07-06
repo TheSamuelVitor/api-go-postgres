@@ -8,8 +8,8 @@ import (
 )
 
 type AddTaskBodyResquest struct {
-	Name_task string `json:"name_task"`
-	Project   string `json:"id_project"`
+	Name_task  string `json:"name_task"`
+	Id_project int    `json:"id_project"`
 }
 
 func (h handler) PostTask(c *gin.Context) {
@@ -23,7 +23,7 @@ func (h handler) PostTask(c *gin.Context) {
 	var newTask models.Task
 
 	newTask.Name_task = body.Name_task
-	newTask.Project = body.Project
+	newTask.Id_project = body.Id_project
 
 	if result := h.DB.Create(&newTask); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

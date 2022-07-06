@@ -8,8 +8,8 @@ import (
 )
 
 type UpdateTaskRequestBody struct {
-	Name_task string `json:"name_task"`
-	Project    string `json:"id_project"`
+	Name_task  string `json:"name_task"`
+	Id_Project int    `json:"id_project"`
 }
 
 func (h handler) PutTask(c *gin.Context) {
@@ -29,7 +29,7 @@ func (h handler) PutTask(c *gin.Context) {
 	}
 
 	task.Name_task = body.Name_task
-	task.Project = body.Project
+	task.Id_project = body.Id_Project
 
 	h.DB.Save(&task)
 

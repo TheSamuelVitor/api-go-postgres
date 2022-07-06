@@ -9,6 +9,7 @@ import (
 
 type UpdateprojectRequestBody struct {
 	Name_project string `json:"name_project"`
+	Id_Team      int    `json:"id_team"`
 }
 
 func (h handler) Updateproject(c *gin.Context) {
@@ -27,6 +28,7 @@ func (h handler) Updateproject(c *gin.Context) {
 	}
 
 	project.Name_project = body.Name_project
+	project.Id_Team = body.Id_Team
 
 	h.DB.Save(&project)
 

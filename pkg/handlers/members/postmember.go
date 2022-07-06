@@ -9,8 +9,8 @@ import (
 
 type AddMemberRequestBody struct {
 	Name_member string `json:"name_member"`
-	Id_Team     string `json:"id_team"`
-	Id_Task     string `json:"id_task"`
+	Id_Team     int    `json:"id_team"`
+	Id_Task     int    `json:"id_task"`
 }
 
 func (h handler) Postmembers(c *gin.Context) {
