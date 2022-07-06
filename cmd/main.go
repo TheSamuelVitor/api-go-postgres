@@ -14,7 +14,7 @@ func main() {
 	viper.SetConfigFile("./pkg/common/envs/.env")
 	viper.ReadInConfig()
 
-	//port := viper.Get("PORT").(string)
+	port := viper.Get("PORT").(string)
 	dbUrl := viper.Get("DB_URL").(string)
 
 	r := gin.Default()
@@ -25,5 +25,5 @@ func main() {
 	tasks.RegisterRoutes(r,h)
 	projects.RegisterRoutes(r,h)
 
-	r.Run("localhost:3000")
+	r.Run(port)
 }
