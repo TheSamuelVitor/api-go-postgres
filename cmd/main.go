@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/db"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/home"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/members"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/projects"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/tasks"
@@ -20,6 +21,7 @@ func main() {
 	r := gin.Default()
 	h := db.Init(dbUrl)
 
+	home.RegisterRoutes(r)
 	members.RegisterRoutes(r,h)
 	teams.RegisterRoutes(r,h)
 	tasks.RegisterRoutes(r,h)
