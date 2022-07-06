@@ -18,6 +18,7 @@ func (h handler) DeleteMembersbyId(c *gin.Context) {
 	}
 
 	h.DB.Delete(&member)
-
-	c.Status(http.StatusOK)
+	c.IndentedJSON(http.StatusOK, gin.H{
+		"message": "member deleted sucessfully",
+	})
 }

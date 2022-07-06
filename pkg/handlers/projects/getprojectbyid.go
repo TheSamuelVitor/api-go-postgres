@@ -14,6 +14,9 @@ func (h handler) GetProjectbyId(c *gin.Context) {
 
 	if result := h.DB.First(&project, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
+		c.IndentedJSON(http.StatusOK, gin.H{
+			"message": "project not found",
+		})
 		return
 	}
 

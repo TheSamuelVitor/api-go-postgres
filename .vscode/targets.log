@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul  6 10:29:52 2022
+# Make data base, printed on Wed Jul  6 11:20:57 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b22df613-afcc-46b5-901d-be8a5b476fde.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7e2021ba-65a8-49d7-a07b-d4d11ae9380d.sock
 # environment
 VSCODE_CWD = /home/brisanet
 # default
@@ -63,7 +63,7 @@ VSCODE_CODE_CACHE_PATH = /home/brisanet/.config/Code/CachedData/30d9c6cd9483b2cc
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.V2QQO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.OHTSO1
 # default
 .LOADED := 
 # default
@@ -101,13 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 9500
+VSCODE_PID = 20186
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/brisanet-OptiPlex-5090:@/tmp/.ICE-unix/1714,unix/brisanet-OptiPlex-5090:/tmp/.ICE-unix/1714
+SESSION_MANAGER = local/brisanet-OptiPlex-5090:@/tmp/.ICE-unix/1740,unix/brisanet-OptiPlex-5090:/tmp/.ICE-unix/1740
 # automatic
 *F = $(notdir $*)
 # environment
@@ -151,7 +151,7 @@ SNAP_USER_COMMON = /home/brisanet/snap/code/common
 # environment
 SNAP = /snap/code/99
 # environment
-INVOCATION_ID = cefdafe5dc93430c904282994737e493
+INVOCATION_ID = e280a3c3291641b7b74e7780f26e1e81
 # environment
 SNAP_REVISION = 99
 # environment
@@ -183,7 +183,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := server
 # environment
-SYSTEMD_EXEC_PID = 1733
+SYSTEMD_EXEC_PID = 1758
 # environment
 DISPLAY = :0
 # environment
@@ -199,15 +199,15 @@ SNAP_DATA = /var/snap/code/99
 # environment
 SNAP_CONTEXT = iu3MAV2Chtz64BoQQRRHpncAmH-ufJUfBG9atDHKR5hQI8VJshx6
 # environment
-MANAGERPID = 1558
+MANAGERPID = 1586
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2715
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19975
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/brisanet/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:28021
+JOURNAL_STREAM = 8:31424
 # environment
 GOMODCACHE = /home/brisanet/go/pkg/mod
 # environment
@@ -294,7 +294,6 @@ server:
 #  File has not been updated.
 
 # Not a target:
- 
 all:
 #  Command line target.
 #  Implicit rule search has been done.
@@ -302,6 +301,7 @@ all:
 #  File has not been updated.
 
 # files hash-table stats:
+ 
 # Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -315,6 +315,6 @@ all:
 # strcache performance: lookups = 22 / hit rate = 22%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Wed Jul  6 10:29:52 2022
+# Finished Make data base on Wed Jul  6 11:20:57 2022
 
  

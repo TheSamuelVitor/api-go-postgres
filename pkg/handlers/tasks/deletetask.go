@@ -19,5 +19,7 @@ func (h handler) DeleteTaskbyId(c *gin.Context) {
 
 	h.DB.Delete(&task)
 
-	c.Status(http.StatusOK)
+	c.IndentedJSON(http.StatusOK, gin.H{
+		"message": "task deleted sucessfully",
+	})
 }

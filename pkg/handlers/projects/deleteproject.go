@@ -19,5 +19,7 @@ func (h handler) DeleteProjectbyId(c *gin.Context) {
 
 	h.DB.Delete(&project)
 	
-	c.Status(http.StatusOK)
+	c.IndentedJSON(http.StatusOK, gin.H{
+		"message": "project deleted sucessfully",
+	})
 }

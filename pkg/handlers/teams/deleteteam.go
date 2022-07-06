@@ -18,5 +18,8 @@ func (h handler) DeleteTeams(c *gin.Context) {
 	}
 
 	h.DB.Delete(&team)
-	c.Status(http.StatusOK)
+	
+	c.IndentedJSON(http.StatusOK, gin.H{
+		"message": "team deleted sucessfully",
+	})
 }

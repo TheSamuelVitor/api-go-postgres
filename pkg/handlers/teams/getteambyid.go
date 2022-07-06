@@ -14,6 +14,9 @@ func (h handler) GetTeambyId(c *gin.Context) {
 
 	if result := h.DB.First(&team, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
+		c.IndentedJSON(http.StatusOK, gin.H{
+			"message": "team not found",
+		})
 		return
 	}
 

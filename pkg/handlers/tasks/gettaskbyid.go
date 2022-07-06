@@ -14,6 +14,9 @@ func (h handler) GetTaskbyId(c *gin.Context) {
 
 	if result := h.DB.First(&task, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
+		c.IndentedJSON(http.StatusOK, gin.H{
+			"message": "task not found",
+		})
 		return
 	}
 
