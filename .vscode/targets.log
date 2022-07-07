@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul  7 08:05:04 2022
+# Make data base, printed on Thu Jul  7 11:36:10 2022
 
 # Variables
 
@@ -25,9 +25,7 @@ SNAP_INSTANCE_KEY =
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9e16204d-b012-4130-950f-d3f64b45ae19.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c138fa45-c18b-4445-8a08-f526652b9ccf.sock
 # environment
 VSCODE_CWD = /home/brisanet
 # default
@@ -76,6 +74,8 @@ CURDIR := /home/brisanet/Área de Trabalho/samuel/api-go-postgres
 VSCODE_PIPE_LOGGING = true
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -101,11 +101,13 @@ SNAP_REEXEC =
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4443
+VSCODE_PID = 56115
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 SESSION_MANAGER = local/brisanet-OptiPlex-5090:@/tmp/.ICE-unix/1851,unix/brisanet-OptiPlex-5090:/tmp/.ICE-unix/1851
 # automatic
@@ -134,6 +136,8 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 SHLVL = 0
 # environment
 MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -162,22 +166,26 @@ VSCODE_LOG_NATIVE = false
 USERNAME = brisanet
 # environment
 GNOME_SETUP_DISPLAY = :1
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
 # environment
 XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
 DESKTOP_SESSION = ubuntu
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = brisanet
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/github-desktop.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 SNAP_ARCH = amd64
 # makefile
@@ -201,7 +209,9 @@ SNAP_CONTEXT = iu3MAV2Chtz64BoQQRRHpncAmH-ufJUfBG9atDHKR5hQI8VJshx6
 # environment
 MANAGERPID = 1696
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3904
+GIO_LAUNCHED_DESKTOP_FILE_PID = 56062
+# environment
+_ = /snap/code/99/usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -255,7 +265,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=121/1024=12%, Rehash=0, Collisions=5/151=3%
+# Load=126/1024=12%, Rehash=0, Collisions=5/156=3%
 
 # Pattern-specific Variable Values
 
@@ -271,6 +281,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # No implicit rules.
 
+ 
 # Files
 
 # Not a target:
@@ -301,7 +312,6 @@ all:
 #  File has not been updated.
 
 # files hash-table stats:
- 
 # Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -315,6 +325,6 @@ all:
 # strcache performance: lookups = 23 / hit rate = 21%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Thu Jul  7 08:05:04 2022
+# Finished Make data base on Thu Jul  7 11:36:10 2022
 
  

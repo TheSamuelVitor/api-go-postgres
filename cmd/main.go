@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/db"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/home"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/members"
@@ -15,7 +17,7 @@ func main() {
 	viper.SetConfigFile("./pkg/common/envs/.env")
 	viper.ReadInConfig()
 
-	port := viper.Get("PORT").(string)
+	port := os.Getenv("PORT") 
 	dbUrl := viper.Get("DB_URL").(string)
 
 	r := gin.Default()
