@@ -11,6 +11,7 @@ import (
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/teams"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	"github.com/gin-contrib/cors"
 )
 
 func main() {
@@ -23,11 +24,14 @@ func main() {
 	r := gin.Default()
 	h := db.Init(dbUrl)
 
+	r.Use(cors.Default())
+
 	home.RegisterRoutes(r)
 	members.RegisterRoutes(r,h)
 	teams.RegisterRoutes(r,h)
 	tasks.RegisterRoutes(r,h)
 	projects.RegisterRoutes(r,h)
 
-	r.Run(port)
+	r.Run(":"+port)
+//	r.Run("localhost:3000")
 }
