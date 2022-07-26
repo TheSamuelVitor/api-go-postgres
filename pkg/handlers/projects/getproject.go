@@ -8,9 +8,10 @@ import (
 )
 
 func (h handler) GetProjects(c *gin.Context) {
-	var projects []models.Project
+	var projects []models.Projeto
+	sql := "select * from projetos"
 
-	if result := h.DB.First(&projects); result.Error != nil {
+	if result := h.DB.Raw(sql).Scan(&projects); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}

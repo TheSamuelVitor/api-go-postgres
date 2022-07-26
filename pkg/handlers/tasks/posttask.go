@@ -20,10 +20,10 @@ func (h handler) PostTask(c *gin.Context) {
 		return
 	}
 
-	var newTask models.Task
+	var newTask models.Tarefa
 
 	newTask.Name_task = body.Name_task
-	newTask.Id_project = body.Id_project
+	newTask.Id_projeto = body.Id_project
 
 	if result := h.DB.Create(&newTask); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

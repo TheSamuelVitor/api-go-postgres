@@ -19,7 +19,7 @@ func (h handler) PostTeam(c *gin.Context) {
 		return
 	}
 
-	var team models.Team
+	var team models.Equipe
 
 	team.Name_team = body.Name_team
 

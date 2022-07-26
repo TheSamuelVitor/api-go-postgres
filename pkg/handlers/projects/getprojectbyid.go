@@ -10,9 +10,10 @@ import (
 func (h handler) GetProjectbyId(c *gin.Context) {
 	id := c.Param("id")
 
-	var project models.Project
+	var project models.Projeto
+	sql := "select * from projetos where id_projeto = ?"
 
-	if result := h.DB.First(&project, id); result.Error != nil {
+	if result := h.DB.Raw(sql, id).Scan(&project); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		c.IndentedJSON(http.StatusOK, gin.H{
 			"message": "project not found",

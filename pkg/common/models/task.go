@@ -1,9 +1,9 @@
 package models
 
-import "gorm.io/gorm"
-
-type Task struct {
-	gorm.Model
-	Name_task  string `json:"name_task"`
-	Id_project int    `json:"id_project"`
+type Tarefa struct {
+	Id_tarefa   int    `json:"id_tarefa"`
+	Name_task   string `json:"name_task"`
+	Description string `json:"description"`
+	Id_projeto  int    `json:"id_project"`
+	Id_membro   int    `json:"id_membro"`
 }

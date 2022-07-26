@@ -11,7 +11,6 @@ type AddMemberRequestBody struct {
 	Name_member string `json:"name_member"`
 	Function    string `json:"function"`
 	Id_Team     int    `json:"id_team"`
-	Id_Task     int    `json:"id_task"`
 }
 
 func (h handler) Postmembers(c *gin.Context) {
@@ -22,11 +21,10 @@ func (h handler) Postmembers(c *gin.Context) {
 		return
 	}
 
-	var newMember models.Member
+	var newMember models.Membro
 
 	newMember.Name_member = body.Name_member
-	newMember.Id_Team = body.Id_Team
-	newMember.Id_Task = body.Id_Task
+	newMember.Id_equipe = body.Id_Team
 	newMember.Function = body.Function
 
 	if result := h.DB.Create(&newMember); result.Error != nil {

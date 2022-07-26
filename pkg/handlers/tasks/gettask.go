@@ -8,12 +8,13 @@ import (
 )
 
 func (h handler) GetTask(c *gin.Context) {
-	var tasks []models.Task
+	var tarefas []models.Tarefa
+	sql := "select * from tarefas"
 
-	if result := h.DB.First(&tasks); result.Error != nil {
+	if result := h.DB.Raw(sql).Scan(&tarefas); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
 
-	c.JSON(http.StatusOK, &tasks)
+	c.JSON(http.StatusOK, &tarefas)
 }

@@ -9,7 +9,8 @@ import (
 
 type AddProjectRequestBody struct {
 	Name_project string `json:"name_project"`
-	Id_Team      int    `json:"id_team"`
+	Description  string `json:"description"`
+	Id_equipe    int    `json:"id_equipe"`
 }
 
 func (h handler) PostProjects(c *gin.Context) {
@@ -21,10 +22,11 @@ func (h handler) PostProjects(c *gin.Context) {
 		return
 	}
 
-	var newProject models.Project
+	var newProject models.Projeto
 
 	newProject.Name_project = body.Name_project
-	newProject.Id_Team = body.Id_Team
+	newProject.Description = body.Description
+	newProject.Id_equipe = body.Id_equipe
 
 	if result := h.DB.Create(&newProject); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

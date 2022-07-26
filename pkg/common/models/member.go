@@ -1,11 +1,8 @@
 package models
 
-import "gorm.io/gorm"
-
-type Member struct {
-	gorm.Model
+type Membro struct {
+	Id_membro   int    `json:"id_membro"`
 	Name_member string `json:"name_member"`
 	Function    string `json:"function"`
-	Id_Team     int    `json:"id_team"`
-	Id_Task     int    `json:"id_task"`
+	Id_equipe   int    `json:"id_equipe"`
 }

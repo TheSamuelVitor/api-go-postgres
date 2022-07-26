@@ -10,14 +10,14 @@ import (
 func (h handler) DeleteMembersbyId(c *gin.Context) {
 	id := c.Param("id")
 
-	var member models.Member
+	var member models.Membro
+	sql := "delete from membros where id_membro = ?"
 
-	if result := h.DB.First(&member, id); result.Error != nil {
+	if result := h.DB.Raw(sql, id).Scan(&member); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
-
-	h.DB.Delete(&member)
+	
 	c.IndentedJSON(http.StatusOK, gin.H{
 		"message": "member deleted sucessfully",
 	})

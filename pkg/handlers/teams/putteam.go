@@ -20,7 +20,7 @@ func (h handler) PutTeam(c *gin.Context) {
 		return
 	}
 
-	var team models.Team
+	var team models.Equipe
 
 	if result := h.DB.First(&team, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

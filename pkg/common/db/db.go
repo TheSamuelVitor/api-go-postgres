@@ -15,10 +15,10 @@ func Init(url string) *gorm.DB {
 		log.Fatalln(err)
 	}
 
-	db.AutoMigrate(&models.Member{})
-	db.AutoMigrate(&models.Team{})
-	db.AutoMigrate(&models.Task{})
-	db.AutoMigrate(&models.Project{})
+	db.AutoMigrate(&models.Membro{})
+	db.AutoMigrate(&models.Equipe{})
+	db.AutoMigrate(&models.Tarefa{})
+	db.AutoMigrate(&models.Projeto{})
 
 	return db
 }

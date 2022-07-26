@@ -10,7 +10,7 @@ import (
 func (h handler) DeleteProjectbyId(c *gin.Context) {
 	id := c.Param("id")
 	
-	var project models.Project
+	var project models.Projeto
 
 	if result := h.DB.First(&project, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

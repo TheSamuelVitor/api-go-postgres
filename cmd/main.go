@@ -1,7 +1,7 @@
 package main
 
 import (
-	"os"
+	// "os"
 
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/db"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/home"
@@ -18,7 +18,7 @@ func main() {
 	viper.SetConfigFile("./pkg/common/envs/.env")
 	viper.ReadInConfig()
 
-	port := os.Getenv("PORT") 
+	// port := os.Getenv("PORT") 
 	dbUrl := viper.Get("DB_URL").(string)
 
 	r := gin.Default()
@@ -32,6 +32,6 @@ func main() {
 	tasks.RegisterRoutes(r,h)
 	projects.RegisterRoutes(r,h)
 
-	r.Run(":"+port)
-//	r.Run("localhost:3000")
+	// r.Run(":"+port)
+	r.Run("localhost:3000")
 }

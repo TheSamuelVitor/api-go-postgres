@@ -11,7 +11,6 @@ type UpdateMemberRequestBody struct {
 	Name_member string `json:"name_member"`
 	Function    string `json:"function"`
 	Id_Team     int    `json:"id_team"`
-	Id_Task     int    `json:"id_task"`
 }
 
 func (h handler) PutMembers(c *gin.Context) {
@@ -23,16 +22,16 @@ func (h handler) PutMembers(c *gin.Context) {
 		return
 	}
 
-	var member models.Member
+	var member models.Membro
+	sql := "select * from membros where id_membro = ?"
 
-	if result := h.DB.First(&member, id); result.Error != nil {
+	if result := h.DB.Raw(sql, id).Scan(&member); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
 
 	member.Name_member = body.Name_member
-	member.Id_Team = body.Id_Team
-	member.Id_Task = body.Id_Task
+	member.Id_equipe = body.Id_Team
 	member.Function = body.Function
 
 	h.DB.Save(&member)

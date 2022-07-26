@@ -9,7 +9,7 @@ import (
 
 type UpdateprojectRequestBody struct {
 	Name_project string `json:"name_project"`
-	Id_Team      int    `json:"id_team"`
+	Id_equipe    int    `json:"id_equipe"`
 }
 
 func (h handler) Updateproject(c *gin.Context) {
@@ -21,14 +21,14 @@ func (h handler) Updateproject(c *gin.Context) {
 		return
 	}
 
-	var project models.Project
+	var project models.Projeto
 	if result := h.DB.First(&project, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
 
 	project.Name_project = body.Name_project
-	project.Id_Team = body.Id_Team
+	project.Id_equipe = body.Id_equipe
 
 	h.DB.Save(&project)
 

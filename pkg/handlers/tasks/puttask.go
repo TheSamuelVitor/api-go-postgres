@@ -21,7 +21,7 @@ func (h handler) PutTask(c *gin.Context) {
 		return
 	}
 
-	var task models.Task
+	var task models.Tarefa
 
 	if result := h.DB.First(&task, id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
@@ -29,7 +29,7 @@ func (h handler) PutTask(c *gin.Context) {
 	}
 
 	task.Name_task = body.Name_task
-	task.Id_project = body.Id_Project
+	task.Id_projeto = body.Id_Project
 
 	h.DB.Save(&task)
 
