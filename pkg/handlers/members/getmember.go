@@ -10,7 +10,9 @@ import (
 func (h handler) GetMembers(c *gin.Context) {
 	var membro []models.Membro
 
-	if result := h.DB.Find(&membro); result.Error != nil {
+	sql := "select membros.id_membro, membros.name_member, membros.function, equipes.id_equipe, equipes.name_team from membros join equipes on equipes.id_equipe = membros.id_equipe"
+
+	if result := h.DB.Raw(sql).Scan(&membro); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
