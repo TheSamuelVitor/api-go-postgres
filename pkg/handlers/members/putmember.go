@@ -9,7 +9,7 @@ import (
 
 type UpdateMemberRequestBody struct {
 	Name_member string `json:"name_member"`
-	Function    string `json:"function"`
+	Funcao      string `json:"funcao"`
 	Id_Team     int    `json:"id_team"`
 }
 
@@ -32,7 +32,7 @@ func (h handler) PutMembers(c *gin.Context) {
 
 	member.Name_member = body.Name_member
 	member.Id_equipe = body.Id_Team
-	member.Function = body.Function
+	member.Funcao = body.Funcao
 
 	h.DB.Save(&member)
 

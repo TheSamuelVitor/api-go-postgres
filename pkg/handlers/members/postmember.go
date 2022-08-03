@@ -9,7 +9,7 @@ import (
 
 type AddMemberRequestBody struct {
 	Name_member string `json:"name_member"`
-	Function    string `json:"function"`
+	Funcao      string `json:"funcao"`
 	Id_Team     int    `json:"id_team"`
 }
 
@@ -25,7 +25,7 @@ func (h handler) Postmembers(c *gin.Context) {
 
 	newMember.Name_member = body.Name_member
 	newMember.Id_equipe = body.Id_Team
-	newMember.Function = body.Function
+	newMember.Funcao = body.Funcao
 
 	if result := h.DB.Create(&newMember); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
