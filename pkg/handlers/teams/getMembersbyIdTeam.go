@@ -12,7 +12,7 @@ func (h handler) GetMemberbyIdTeam(c* gin.Context) {
 
 	var members []models.Equipe
 
-	if result := h.DB.Find(&members, "id_team", id); result.Error != nil {
+	if result := h.DB.Find(&members, "id_equipe", id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}

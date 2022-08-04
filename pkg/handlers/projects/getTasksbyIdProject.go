@@ -12,7 +12,7 @@ func (h handler) GetTasksbyProjectId(c *gin.Context)  {
 
 	var tasks []models.Tarefa
 
-	if result := h.DB.Find(&tasks, "id_project", id); result.Error != nil {
+	if result := h.DB.Find(&tasks, "id_projeto", id); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}

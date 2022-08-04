@@ -15,7 +15,7 @@ func (h handler) GetProjectbyId(c *gin.Context) {
 
 	if result := h.DB.Raw(sql, id).Scan(&project); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
-		c.IndentedJSON(http.StatusOK, gin.H{
+		c.JSON(http.StatusNotFound, gin.H{
 			"message": "project not found",
 		})
 		return

@@ -8,7 +8,7 @@ import (
 )
 
 type AddTeamRequestBody struct {
-	Name_team string `json:"name_team"`
+	Nome_equipe string `json:"nome_equipe"`
 }
 
 func (h handler) PostTeam(c *gin.Context) {
@@ -21,7 +21,7 @@ func (h handler) PostTeam(c *gin.Context) {
 
 	var team models.Equipe
 
-	team.Name_team = body.Name_team
+	team.Nome_equipe = body.Nome_equipe
 
 	if result := h.DB.Create(&team); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)

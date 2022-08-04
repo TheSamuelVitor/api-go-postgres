@@ -8,7 +8,7 @@ import (
 )
 
 type UpdateTeamRequestBody struct {
-	Name_team string `json:"name_team"`
+	Nome_equipe string `json:"nome_equipe"`
 }
 
 func (h handler) PutTeam(c *gin.Context) {
@@ -27,7 +27,7 @@ func (h handler) PutTeam(c *gin.Context) {
 		return
 	}
 
-	team.Name_team = body.Name_team
+	team.Nome_equipe = body.Nome_equipe
 
 	h.DB.Save(&team)
 

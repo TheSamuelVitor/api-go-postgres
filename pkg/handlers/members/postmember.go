@@ -8,9 +8,9 @@ import (
 )
 
 type AddMemberRequestBody struct {
-	Name_member string `json:"name_member"`
+	Nome_membro string `json:"nome_membro"`
 	Funcao      string `json:"funcao"`
-	Id_Team     int    `json:"id_team"`
+	Id_equipe   int    `json:"id_equipe"`
 }
 
 func (h handler) Postmembers(c *gin.Context) {
@@ -23,8 +23,8 @@ func (h handler) Postmembers(c *gin.Context) {
 
 	var newMember models.Membro
 
-	newMember.Name_member = body.Name_member
-	newMember.Id_equipe = body.Id_Team
+	newMember.Nome_membro = body.Nome_membro
+	newMember.Id_equipe = body.Id_equipe
 	newMember.Funcao = body.Funcao
 
 	if result := h.DB.Create(&newMember); result.Error != nil {

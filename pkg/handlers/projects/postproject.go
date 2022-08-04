@@ -8,8 +8,8 @@ import (
 )
 
 type AddProjectRequestBody struct {
-	Name_project string `json:"name_project"`
-	Description  string `json:"description"`
+	Nome_projeto string `json:"nome_projeto"`
+	Descricao    string `json:"descricao"`
 	Id_equipe    int    `json:"id_equipe"`
 }
 
@@ -24,8 +24,8 @@ func (h handler) PostProjects(c *gin.Context) {
 
 	var newProject models.Projeto
 
-	newProject.Name_project = body.Name_project
-	newProject.Description = body.Description
+	newProject.Nome_projeto = body.Nome_projeto
+	newProject.Descricao = body.Descricao
 	newProject.Id_equipe = body.Id_equipe
 
 	if result := h.DB.Create(&newProject); result.Error != nil {
