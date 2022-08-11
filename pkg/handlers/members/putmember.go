@@ -8,7 +8,7 @@ import (
 )
 
 type UpdateMemberRequestBody struct {
-	Nome_membro string `json:"Nnome_membro"`
+	Nome_membro string `json:"nome_membro"`
 	Funcao      string `json:"funcao"`
 	Id_equipe   int    `json:"id_equipe"`
 }
