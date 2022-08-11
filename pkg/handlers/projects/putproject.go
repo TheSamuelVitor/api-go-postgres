@@ -9,7 +9,7 @@ import (
 
 type UpdateprojectRequestBody struct {
 	Nome_projeto string `json:"nome_projeto"`
-	Descricao    string `json:"description"`
+	Descricao    string `json:"descricao"`
 	Id_equipe    int    `json:"id_equipe"`
 }
 
