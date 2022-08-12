@@ -1,14 +1,22 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
+<<<<<<< HEAD
 # GNU Make 4.3
+=======
+# GNU Make 4.2.1
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
+<<<<<<< HEAD
 # Make data base, printed on Fri Aug 12 19:14:38 2022
+=======
+# Make data base, printed on Thu Aug 11 09:28:24 2022
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 
 # Variables
 
@@ -157,7 +165,13 @@ SNAP_REAL_HOME = /home/samuel
 # environment
 USERNAME = samuel
 # environment
+<<<<<<< HEAD
 GNOME_SETUP_DISPLAY = :1
+=======
+GIO_LAUNCHED_DESKTOP_FILE_PID = 17446
+# automatic
+%F = $(notdir $%)
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 # environment
 LC_TELEPHONE = pt_BR.UTF-8
 # automatic
@@ -219,6 +233,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/samuel
 # environment
+<<<<<<< HEAD
 QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -230,6 +245,11 @@ SNAP_NAME = code
 GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
+=======
+NO_AT_BRIDGE = 1
+# environment
+QT_ACCESSIBILITY = 1
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -253,11 +273,17 @@ XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # environment
+<<<<<<< HEAD
 LC_IDENTIFICATION = pt_BR.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
 # Load=122/1024=12%, Rehash=0, Collisions=3/152=2%
+=======
+VSCODE_PID = 4314
+# variable set hash-table stats:
+# Load=97/1024=9%, Rehash=0, Collisions=16/122=13%
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 
 # Pattern-specific Variable Values
 
@@ -316,7 +342,12 @@ all:
 
 # strcache performance: lookups = 22 / hit rate = 22%
 # hash-table stats:
+<<<<<<< HEAD
 # Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
 # Finished Make data base on Fri Aug 12 19:14:38 2022
+=======
+# Load=17/8192=0%, Rehash=0, Collisions=1/22=5%
+# Finished Make data base on Thu Aug 11 09:28:24 2022
+>>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
 
  
