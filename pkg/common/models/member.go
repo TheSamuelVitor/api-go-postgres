@@ -8,7 +8,7 @@ type Membro struct {
 }
 
 
-type MembrocomEquipe struct {
+type MembroCompleto struct {
 	Id_membro   int    `gorm:"primary_key" json:"id_membro"`
 	Nome_membro string `json:"nome_membro"`
 	Funcao      string `json:"funcao"`
