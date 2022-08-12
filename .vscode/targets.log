@@ -1,10 +1,13 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <<<<<<< HEAD
+<<<<<<< HEAD
 make: *** No rule to make target 'all'.  Stop.
 
 <<<<<<< HEAD
 # GNU Make 4.3
 =======
+=======
+>>>>>>> parent of 65fba9e (update name and functions)
 =======
 >>>>>>> parent of 65fba9e (update name and functions)
 # GNU Make 4.2.1
@@ -17,10 +20,14 @@ make: *** No rule to make target 'all'.  Stop.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Make data base, printed on Fri Aug 12 19:14:38 2022
 =======
 # Make data base, printed on Thu Aug 11 09:28:24 2022
 >>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
+=======
+# Make data base, printed on Thu Aug 11 09:19:23 2022
+>>>>>>> parent of 65fba9e (update name and functions)
 =======
 # Make data base, printed on Thu Aug 11 09:19:23 2022
 >>>>>>> parent of 65fba9e (update name and functions)
@@ -355,8 +362,12 @@ all:
 =======
 # Load=17/8192=0%, Rehash=0, Collisions=1/22=5%
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Finished Make data base on Thu Aug 11 09:28:24 2022
 >>>>>>> parent of be0cd07 (update gets and models to show the respective caleed names)
+=======
+# Finished Make data base on Thu Aug 11 09:19:23 2022
+>>>>>>> parent of 65fba9e (update name and functions)
 =======
 # Finished Make data base on Thu Aug 11 09:19:23 2022
 >>>>>>> parent of 65fba9e (update name and functions)
