@@ -8,7 +8,7 @@ type Tarefa struct {
 	Id_membro   int    `json:"id_membro"`
 }
 
-type TarefacomProjetoeMembro struct {
+type TarefaCompleta struct {
 	Id_tarefa   int    `gorm:"primary_key" json:"id_tarefa"`
 	Nome_tarefa string `json:"nome_tarefa"`
 	Descricao   string `json:"descricao"`
@@ -17,4 +17,3 @@ type TarefacomProjetoeMembro struct {
 	Id_membro   int    `json:"id_membro"`
 	Nome_membro string `json:"nome_membro"`
 }
-	
