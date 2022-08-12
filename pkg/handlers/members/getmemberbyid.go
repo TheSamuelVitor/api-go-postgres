@@ -9,11 +9,10 @@ import (
 
 func (h handler) GetMemberbyId(c *gin.Context) {
 	id := c.Param("id")
-
-	var member models.Membro
-	sql := "select * from membros where id_membro = ?"
-
-
+	
+	var member models.MembroCompleto
+	sql := "select m.id_membro, m.nome_membro, m.funcao, m.id_equipe, e.nome_equipe from membros m join equipes e on e.id_equipe = m.id_equipe where id_membro = ?;"
+	
 	if result := h.DB.Raw(sql, id).Scan(&member); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		c.IndentedJSON(http.StatusOK, gin.H{
