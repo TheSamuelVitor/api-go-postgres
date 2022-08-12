@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 11 09:28:24 2022
+# Make data base, printed on Thu Aug 11 10:57:53 2022
 
 # Variables
 
@@ -95,7 +93,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 17446
+GIO_LAUNCHED_DESKTOP_FILE_PID = 47028
 # automatic
 %F = $(notdir $%)
 # environment
@@ -177,8 +175,6 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # default
 MAKEFILES := 
@@ -205,9 +201,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4314
+VSCODE_PID = 53204
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=16/122=13%
+# Load=96/1024=9%, Rehash=0, Collisions=16/121=13%
 
 # Pattern-specific Variable Values
 
@@ -266,6 +262,8 @@ server:
 # strcache performance: lookups = 22 / hit rate = 22%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Thu Aug 11 09:28:24 2022
+# Finished Make data base on Thu Aug 11 10:57:53 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+

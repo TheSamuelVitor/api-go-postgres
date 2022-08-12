@@ -9,7 +9,7 @@ import (
 
 func (h handler) GetTeams(c *gin.Context) {
 	var teams []models.Equipe
-	sql := "select * from equipes"
+	sql := "select * from equipes order by id_equipe"
 
 	if result := h.DB.Raw(sql).Scan(&teams); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
