@@ -7,7 +7,7 @@ type Projeto struct {
 	Id_equipe    int    `json:"id_equipe"`
 }
 
-type ProjetocomEquipe struct {
+type ProjetoCompleto struct {
 	Id_projeto   int    `gorm:"primary_key" json:"id_projeto"`
 	Nome_projeto string `json:"nome_projeto"`
 	Descricao    string `json:"descricao"`

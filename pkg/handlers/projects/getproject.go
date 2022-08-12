@@ -8,7 +8,7 @@ import (
 )
 
 func (h handler) GetProjects(c *gin.Context) {
-	var projects []models.ProjetocomEquipe
+	var projects []models.ProjetoCompleto
 	sql := "select projetos.id_projeto, projetos.nome_projeto, projetos.descricao, projetos.id_equipe, equipes.nome_equipe from projetos join equipes on projetos.id_equipe = equipes.id_equipe order by id_projeto;"
 
 	if result := h.DB.Raw(sql).Scan(&projects); result.Error != nil {
