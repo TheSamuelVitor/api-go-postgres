@@ -10,8 +10,8 @@ import (
 func (h handler) GetMemberbyId(c *gin.Context) {
 	id := c.Param("id")
 
-	var member models.Membro
-	sql := "select * from membros where id_membro = ?"
+	var member models.MembrocomEquipe
+	sql := "select membros.id_membro, membros.nome_membro, membros.funcao, membros.id_equipe, equipes.nome_equipe from membros join equipes on equipes.id_equipe = membros.id_equipe where id_membro = ?"
 
 
 	if result := h.DB.Raw(sql, id).Scan(&member); result.Error != nil {

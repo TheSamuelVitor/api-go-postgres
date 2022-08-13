@@ -8,7 +8,7 @@ import (
 )
 
 func (h handler) GetMembers(c *gin.Context) {
-	var membro []models.Membro
+	var membro []models.MembrocomEquipe
 
 	sql := "select membros.id_membro, membros.nome_membro, membros.funcao, membros.id_equipe, equipes.nome_equipe from membros join equipes on equipes.id_equipe = membros.id_equipe order by id_membro;"
 
