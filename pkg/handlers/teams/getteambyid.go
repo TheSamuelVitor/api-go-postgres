@@ -7,19 +7,39 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type GetInfoOfTeam struct {
+	ID_equipe   uint             `json:"id_equipe"`
+	Nome_equipe string           `json:"nome_equipe"`
+	Membros     []models.Membro  `json:"membros"`
+	Projetos    []models.Projeto `json:"projetos"`
+}
+
 func (h handler) GetTeambyId(c *gin.Context) {
 	id := c.Param("id")
 
 	var team models.Equipe
-	sql := "select * from equipes where id_equipe = ?"
+	var info GetInfoOfTeam
+	var membro []models.Membro
+	var projeto []models.Projeto
 
-	if result := h.DB.Raw(sql, id).Scan(&team); result.Error != nil {
+	if result := h.DB.Raw("select * from equipes where id_equipe = ?", id).Scan(&team); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
-		c.IndentedJSON(http.StatusOK, gin.H{
-			"message": "team not found",
-		})
 		return
 	}
 
-	c.JSON(http.StatusOK, &team)
+	if result := h.DB.Raw("select * from membros where id_equipe = ?", id).Scan(&membro); result.Error != nil {
+		c.AbortWithError(http.StatusNotFound, result.Error)
+		return
+	}
+
+	if result := h.DB.Raw("select * from projetos where id_equipe = ?", id).Scan(&projeto); result.Error != nil {
+		c.AbortWithError(http.StatusNotFound, result.Error)
+		return
+	}
+
+	info.Nome_equipe = team.Nome_equipe
+	info.Membros = membro
+	info.Projetos = projeto
+
+	c.JSON(http.StatusOK, &info)
 }
