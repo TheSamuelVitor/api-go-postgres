@@ -37,6 +37,7 @@ func (h handler) GetTeambyId(c *gin.Context) {
 		return
 	}
 
+	info.ID_equipe = uint(team.Id_equipe)
 	info.Nome_equipe = team.Nome_equipe
 	info.Membros = membro
 	info.Projetos = projeto
