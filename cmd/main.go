@@ -9,9 +9,10 @@ import (
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/projects"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/tasks"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/teams"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/user"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
-	"github.com/gin-contrib/cors"
 )
 
 func main() {
@@ -31,6 +32,7 @@ func main() {
 	teams.RegisterRoutes(r,h)
 	tasks.RegisterRoutes(r,h)
 	projects.RegisterRoutes(r,h)
+	user.RegisterRoutes(r, h)
 
 	r.Run(":"+port)
 	// r.Run("localhost:3000")

@@ -8,6 +8,8 @@ import (
 	"gorm.io/gorm"
 )
 
+var db *gorm.DB
+
 func Init(url string) *gorm.DB {
 	db,err := gorm.Open(postgres.Open(url), &gorm.Config{})
 
@@ -19,6 +21,11 @@ func Init(url string) *gorm.DB {
 	db.AutoMigrate(&models.Equipe{})
 	db.AutoMigrate(&models.Tarefa{})
 	db.AutoMigrate(&models.Projeto{})
+	db.AutoMigrate(&models.User{})
 
+	return db
+}
+
+func GetDatabase() *gorm.DB {
 	return db
 }
