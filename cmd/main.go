@@ -10,6 +10,7 @@ import (
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/tasks"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/teams"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/user"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/handlers/login"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -33,6 +34,7 @@ func main() {
 	tasks.RegisterRoutes(r,h)
 	projects.RegisterRoutes(r,h)
 	user.RegisterRoutes(r, h)
+	login.RegisterRoutes(r,h)	
 
 	r.Run(":"+port)
 	// r.Run("localhost:3000")
