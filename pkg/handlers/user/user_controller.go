@@ -1,14 +1,12 @@
 package user
 
 import (
-	//"github.com/TheSamuelVitor/api-go-postgres/pkg/common/db"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/services"
 	"github.com/gin-gonic/gin"
 )
 
 func (h handler) CreateUser(c *gin.Context) {
-	//db := db.GetDatabase()
 
 	var p models.User
 

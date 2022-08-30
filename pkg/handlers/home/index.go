@@ -42,8 +42,8 @@ var Routes = []string{
 	"GET    -  /projetos/tarefas/:id  ",
 }
 
-func telaInicial(g *gin.Context) {
-	g.IndentedJSON(http.StatusOK, Routes)
+func telaInicial(c *gin.Context) {
+	c.JSON(http.StatusOK, Routes)
 }
 
 func RegisterRoutes(g *gin.Engine){

@@ -15,12 +15,12 @@ type jwtService struct {
 func NewJWTService() *jwtService {
 	return &jwtService{
 		secretKey: "secretKey",
-		issure: "api-projetos",
+		issure:    "api-projetos",
 	}
 }
 
 type Claim struct {
-	Sum uint `json:"sum"`
+	Sub uint `json:"sub"`
 	jwt.StandardClaims
 }
 
@@ -29,8 +29,8 @@ func (s *jwtService) GenerateToken(id uint) (string, error) {
 		id,
 		jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Hour * 2).Unix(),
-			Issuer: s.issure,
-			IssuedAt: time.Now().Unix(),
+			Issuer:    s.issure,
+			IssuedAt:  time.Now().Unix(),
 		},
 	}
 
@@ -45,9 +45,9 @@ func (s *jwtService) GenerateToken(id uint) (string, error) {
 
 }
 
-func (s *jwtService) ValidateToken (token string) bool {
+func (s *jwtService) ValidateToken(token string) bool {
 	_, err := jwt.Parse(token, func(t *jwt.Token) (interface{}, error) {
-		if _, isValid := t.Method.(*jwt.SigningMethodHMAC); isValid {
+		if _, isValid := t.Method.(*jwt.SigningMethodHMAC); !isValid {
 			return nil, fmt.Errorf("invalid token: %v", token)
 		}
 

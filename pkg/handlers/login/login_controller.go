@@ -19,13 +19,14 @@ func (h handler) Login(c *gin.Context) {
 	}
 
 	var user models.User
-	dbError := h.DB.Raw("select * from users where email = ?", p.Email).Scan(&user).Error
+	dbError := h.DB.Where("email = ?", p.Email).First(&user).Error
 	if dbError != nil {
 		c.JSON(400, gin.H{
 			"error": "cannot find user",
 		})
 		return
 	}
+
 
 	if user.Password != services.Sha256Encoder(p.Password) {
 		c.JSON(400, gin.H{
@@ -34,7 +35,7 @@ func (h handler) Login(c *gin.Context) {
 		return
 	}
 
-	token, err := services.NewJWTService().GenerateToken(uint(user.Id))
+	token, err := services.NewJWTService().GenerateToken(user.Id)
 	if err != nil {
 		c.JSON(500, gin.H{
 			"error": err.Error(),
