@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/middlewares"
 )
 
 var Routes = []string{
@@ -48,5 +49,6 @@ func telaInicial(c *gin.Context) {
 
 func RegisterRoutes(g *gin.Engine){
 	routes := g.Group("")
+	g.Use(middlewares.CORSMiddleware())
 	routes.GET("", telaInicial)
 }
