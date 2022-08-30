@@ -3,12 +3,10 @@ package login
 import (
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/services"
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/middlewares"
 	"github.com/gin-gonic/gin"
 )
 
 func (h handler) Login(c *gin.Context) {
-	middlewares.CorsMiddleware()
 
 	var p models.Login
 
