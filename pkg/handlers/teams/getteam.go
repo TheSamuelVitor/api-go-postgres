@@ -8,7 +8,7 @@ import (
 )
 
 func (h handler) GetTeams(c *gin.Context) {
-	var teams []models.Equipe
+	var teams []models.EquipeSemId
 	sql := "select * from equipes order by id_equipe"
 
 	if result := h.DB.Raw(sql).Scan(&teams); result.Error != nil {

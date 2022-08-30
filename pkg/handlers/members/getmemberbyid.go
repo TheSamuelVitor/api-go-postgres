@@ -11,7 +11,7 @@ func (h handler) GetMemberbyId(c *gin.Context) {
 	id := c.Param("id")
 
 	var member models.MembrocomEquipe
-	sql := "select membros.id_membro, membros.nome_membro, membros.funcao, membros.id_equipe, equipes.nome_equipe from membros join equipes on equipes.id_equipe = membros.id_equipe where id_membro = ?"
+	sql := "select membros.nome_membro, membros.funcao, equipes.nome_equipe from membros join equipes on equipes.id_equipe = membros.id_equipe where id_membro = ?"
 
 
 	if result := h.DB.Raw(sql, id).Scan(&member); result.Error != nil {
