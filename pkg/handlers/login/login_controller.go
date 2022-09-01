@@ -22,7 +22,7 @@ func (h handler) Login(c *gin.Context) {
 	dbError := h.DB.Where("email = ?", p.Email).First(&user).Error
 	if dbError != nil {
 		c.JSON(400, gin.H{
-			"error": "cannot find user",
+			"Erro de autenticação": "usuario nao encontrado",
 		})
 		return
 	}
@@ -30,7 +30,7 @@ func (h handler) Login(c *gin.Context) {
 
 	if user.Password != services.Sha256Encoder(p.Password) {
 		c.JSON(400, gin.H{
-			"error": "invalid credentials",
+			"Erro de autenticação": "senha digitada incorretamente",
 		})
 		return
 	}
