@@ -1,7 +1,6 @@
 package teams
 
 import (
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/middlewares"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
@@ -14,8 +13,6 @@ func RegisterRoutes(r *gin.Engine, db *gorm.DB){
 	h := &handler{
 		DB: db,
 	}
-
-	r.Use(middlewares.CORSMiddleware())
 
 	routes := r.Group("/equipes")
 	routes.GET("/", h.GetTeams)

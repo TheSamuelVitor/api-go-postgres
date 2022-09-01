@@ -1,7 +1,6 @@
 package tasks
 
 import (
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/middlewares"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
@@ -15,7 +14,6 @@ func RegisterRoutes(r *gin.Engine, db *gorm.DB) {
 		DB: db,
 	}
 
-	r.Use(middlewares.CORSMiddleware())
 
 	routes := r.Group("/tarefas")
 	routes.GET("/", h.GetTask)
