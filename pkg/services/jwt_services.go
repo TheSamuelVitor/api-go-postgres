@@ -2,9 +2,10 @@ package services
 
 import (
 	"fmt"
+	"os"
 	"time"
 
-	"github.com/golang-jwt/jwt"
+	"github.com/dgrijalva/jwt-go"
 )
 
 type jwtService struct {
@@ -14,8 +15,8 @@ type jwtService struct {
 
 func NewJWTService() *jwtService {
 	return &jwtService{
-		secretKey: "secretKey",
-		issure:    "api-projetos",
+		secretKey: os.Getenv("JWT_SECRETKEY"),
+		issure:    os.Getenv("JWT_ISSURE"),
 	}
 }
 
@@ -42,7 +43,6 @@ func (s *jwtService) GenerateToken(id uint) (string, error) {
 	}
 
 	return t, nil
-
 }
 
 func (s *jwtService) ValidateToken(token string) bool {
