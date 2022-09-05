@@ -3,6 +3,7 @@ package home
 import (
 	"net/http"
 
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/middlewares"
 	"github.com/gin-gonic/gin"
 )
 
@@ -47,6 +48,6 @@ func telaInicial(c *gin.Context) {
 }
 
 func RegisterRoutes(g *gin.Engine){
-	routes := g.Group("")
+	routes := g.Group("", middlewares.Auth())
 	routes.GET("", telaInicial)
 }
