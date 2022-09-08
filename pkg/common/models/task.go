@@ -17,4 +17,3 @@ type TarefacomProjetoeMembro struct {
 	Id_membro   int    `json:"id_membro"`
 	Nome_membro string `json:"nome_membro"`
 }
-	
