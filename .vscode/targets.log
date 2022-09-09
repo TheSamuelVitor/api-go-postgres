@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep  8 09:00:44 2022
+# Make data base, printed on Fri Sep  9 10:40:54 2022
 
 # Variables
 
@@ -24,6 +26,8 @@ DESKTOP_SESSION = ubuntu
 XDG_SESSION_CLASS = user
 # environment
 XDG_SESSION_TYPE = x11
+# environment
+NVM_INC = /home/brisa/.nvm/versions/node/v16.15.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -43,9 +47,9 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/dbus-update-activation-environment
+_ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:58407
+JOURNAL_STREAM = 8:43885
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -53,7 +57,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/github-desktop.desktop
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # environment
 USERNAME = brisa
 # environment
@@ -63,7 +67,9 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # environment
-MANAGERPID = 2381
+MANAGERPID = 2825
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/brisa
 # environment
@@ -71,29 +77,33 @@ GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/brisa/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/2603,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/2603
+SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/3043,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/3043
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
 GOPATH = /home/brisa/go
 # environment
+NVM_BIN = /home/brisa/.nvm/versions/node/v16.15.1/bin
+# environment
 XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 506083110a284995a987ecacd3ff9503
+INVOCATION_ID = 5d57c8d6c8764b8bb22feaae0031883b
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 14708
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3875
 # automatic
 %F = $(notdir $%)
 # environment
@@ -103,9 +113,9 @@ PWD = /home/brisa/Documentos/GitHub/api-go-postgres
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2564
+SSH_AGENT_PID = 3004
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -113,7 +123,7 @@ GOMODCACHE = /home/brisa/go/pkg/mod
 # environment
 HOME = /home/brisa
 # environment
-VSCODE_CLI = 1
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
@@ -121,7 +131,7 @@ LOGNAME = brisa
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
+NVM_CD_FLAGS = 
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -138,8 +148,6 @@ MAKECMDGOALS := all
 QT_IM_MODULE = ibus
 # environment
 SHLVL = 0
-# environment
-LOCAL_GIT_DIRECTORY = /usr/lib/github-desktop/resources/app/git
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -168,14 +176,14 @@ MAKEFLAGS = pqrR
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/brisa/.nvm
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
-# environment
-NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -203,9 +211,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3264
+VSCODE_PID = 3875
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=16/122=13%
+# Load=100/1024=10%, Rehash=0, Collisions=13/125=10%
 
 # Pattern-specific Variable Values
 
@@ -264,8 +272,6 @@ server:
 # strcache performance: lookups = 23 / hit rate = 21%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=1/23=4%
-# Finished Make data base on Thu Sep  8 09:00:44 2022
+# Finished Make data base on Fri Sep  9 10:40:54 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-

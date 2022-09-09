@@ -16,11 +16,11 @@ type TarefacomProjeto struct {
 }
 
 type Info struct {
-	Id_membro   int             `gorm:"primary_key" json:"id_membro"`
-	Nome_membro string          `json:"nome_membro"`
-	Funcao      string          `json:"funcao"`
-	Id_equipe   int             `json:"id_equipe"`
-	Nome_equipe string          `json:"nome_equipe"`
+	Id_membro   int                `gorm:"primary_key" json:"id_membro"`
+	Nome_membro string             `json:"nome_membro"`
+	Funcao      string             `json:"funcao"`
+	Id_equipe   int                `json:"id_equipe"`
+	Nome_equipe string             `json:"nome_equipe"`
 	Tarefas     []TarefacomProjeto `json:"tarefas"`
 }
 
@@ -36,7 +36,7 @@ func (h handler) GetMemberbyId(c *gin.Context) {
 		return
 	}
 
-	if result := h.DB.Raw("select t.id_tarefa, t.nome_tarefa, t.descricao, t.id_projeto, p.nome_projeto from tarefas t inner join projetos p on p.id_projeto = t.id_projeto inner join membros m on m.id_membro = t.id_membro where id_tarefa = ?", id).Scan(&tarefas); result.Error != nil {
+	if result := h.DB.Raw("select * from tarefas where id_membro = ?", id).Scan(&tarefas); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
