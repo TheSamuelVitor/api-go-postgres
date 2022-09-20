@@ -13,7 +13,7 @@ type Info struct {
 	Descricao    string          `json:"descricao"`
 	Id_equipe    int             `json:"id_equipe"`
 	Nome_equipe  string          `json:"nome_equipe"`
-	Tarefas      []models.Tarefa `json:"tarefas"`
+	Tarefas      []models.Tarefa `json:"tarefas,omitempty"`
 }
 
 func (h handler) GetProjectbyId(c *gin.Context) {

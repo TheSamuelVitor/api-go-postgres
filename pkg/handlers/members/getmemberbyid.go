@@ -21,7 +21,7 @@ type Info struct {
 	Funcao      string             `json:"funcao"`
 	Id_equipe   int                `json:"id_equipe"`
 	Nome_equipe string             `json:"nome_equipe"`
-	Tarefas     []TarefacomProjeto `json:"tarefas"`
+	Tarefas     []TarefacomProjeto `json:"tarefas,omitempty"`
 }
 
 func (h handler) GetMemberbyId(c *gin.Context) {

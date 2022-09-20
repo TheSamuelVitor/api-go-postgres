@@ -10,8 +10,8 @@ import (
 type GetInfoOfTeam struct {
 	ID_equipe   uint             `json:"id_equipe"`
 	Nome_equipe string           `json:"nome_equipe"`
-	Membros     []models.Membro  `json:"membros"`
-	Projetos    []models.Projeto `json:"projetos"`
+	Membros     []models.Membro  `json:"membros,omitempty"`
+	Projetos    []models.Projeto `json:"projetos,omitempty"`
 }
 
 func (h handler) GetTeambyId(c *gin.Context) {
