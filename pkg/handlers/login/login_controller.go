@@ -1,7 +1,7 @@
 package login
 
 import (
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/services"
 	"github.com/gin-gonic/gin"
 )
@@ -26,7 +26,6 @@ func (h handler) Login(c *gin.Context) {
 		})
 		return
 	}
-
 
 	if user.Password != services.Sha256Encoder(p.Password) {
 		c.JSON(400, gin.H{

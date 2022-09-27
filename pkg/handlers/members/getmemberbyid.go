@@ -3,7 +3,7 @@ package members
 import (
 	"net/http"
 
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
@@ -31,12 +31,17 @@ func (h handler) GetMemberbyId(c *gin.Context) {
 	var member models.MembrocomEquipe
 	var tarefas []TarefacomProjeto
 
-	if result := h.DB.Raw("select m.id_membro, m.nome_membro, m.funcao, m.id_equipe, e.nome_equipe from membros m join equipes e on e.id_equipe = m.id_equipe where id_membro = ?", id).Scan(&member); result.Error != nil {
+	comandoMembros := "select m.id_membro, m.nome_membro, m.funcao, m.id_equipe, e.nome_equipe from membros m join equipes e on e.id_equipe = m.id_equipe where id_membro = ?"
+	result := h.DB.Raw(comandoMembros, id).Scan(&member)
+
+	if result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
 
-	if result := h.DB.Raw("select * from tarefas where id_membro = ?", id).Scan(&tarefas); result.Error != nil {
+	comandoTarefas := "select * from tarefas where id_membro = ?"
+	result = h.DB.Raw(comandoTarefas, id).Scan(&tarefas)
+	if result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}

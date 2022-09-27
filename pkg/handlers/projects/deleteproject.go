@@ -3,13 +3,13 @@ package projects
 import (
 	"net/http"
 
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
 func (h handler) DeleteProjectbyId(c *gin.Context) {
 	id := c.Param("id")
-	
+
 	var project models.Projeto
 
 	if result := h.DB.First(&project, id); result.Error != nil {
@@ -18,7 +18,7 @@ func (h handler) DeleteProjectbyId(c *gin.Context) {
 	}
 
 	h.DB.Delete(&project)
-	
+
 	c.IndentedJSON(http.StatusOK, gin.H{
 		"message": "project deleted sucessfully",
 	})

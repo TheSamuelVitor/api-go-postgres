@@ -19,8 +19,9 @@ func (h handler) GetMemberOrdered(c *gin.Context) {
 	ordena := c.Param("ordena")
 	var membros []MembrocomEquipe
 
-	sql := "select m.id_membro, m.nome_membro, m.funcao, m.id_equipe, e.nome_equipe, m.created_at, m.updated_at from membros m join equipes e on e.id_equipe = m.id_equipe order by "+ordena
-	if result := h.DB.Raw(sql).Scan(&membros); result.Error != nil  {
+	comandoSQL := "select m.id_membro, m.nome_membro, m.funcao, m.id_equipe, e.nome_equipe, m.created_at, m.updated_at from membros m join equipes e on e.id_equipe = m.id_equipe order by "+ordena
+	result := h.DB.Raw(comandoSQL).Scan(&membros)
+	if result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}

@@ -3,11 +3,11 @@ package projects
 import (
 	"net/http"
 
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
-func (h handler) GetTasksbyProjectId(c *gin.Context)  {
+func (h handler) GetTasksbyProjectId(c *gin.Context) {
 	id := c.Param("id")
 
 	var tasks []models.Tarefa

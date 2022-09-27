@@ -3,7 +3,7 @@ package projects
 import (
 	"net/http"
 
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/common/models"
+	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
 	"github.com/gin-gonic/gin"
 )
 
