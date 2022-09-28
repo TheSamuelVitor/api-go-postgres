@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Sep 26 10:26:19 2022
+# Make data base, printed on Wed Sep 28 09:44:43 2022
 
 # Variables
 
@@ -28,6 +28,8 @@ XDG_SESSION_TYPE = x11
 NVM_INC = /home/brisa/.nvm/versions/node/v16.15.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -45,7 +47,9 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:63583
+_ = /usr/bin/code
+# environment
+JOURNAL_STREAM = 8:57651
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -53,7 +57,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # environment
 USERNAME = brisa
 # environment
@@ -63,13 +67,11 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # environment
-_ = /usr/bin/code
-# environment
-MANAGERPID = 2462
+MANAGERPID = 2379
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/brisa/go/src/samuel/golang
+VSCODE_CWD = /home/brisa/Documentos/GitHub/api-go-postgres
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -79,7 +81,7 @@ PATH = /home/brisa/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bi
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/2679,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/2679
+SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/2598,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/2598
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
@@ -91,7 +93,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 51a9fdec4cf64ad3a9c58fe5d09cfa92
+INVOCATION_ID = 443a181a97ea42b4b2804fcb639b0b87
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -100,6 +102,8 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4359
 # automatic
 %F = $(notdir $%)
 # environment
@@ -109,7 +113,7 @@ PWD = /home/brisa/Documentos/GitHub/api-go-postgres
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2640
+SSH_AGENT_PID = 2559
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -165,7 +169,7 @@ XDG_CURRENT_DESKTOP = Unity
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/brisa/go/src/samuel
+OLDPWD = /home/brisa/Documentos/GitHub
 # default
 .VARIABLES := 
 # automatic
@@ -189,6 +193,8 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
+NO_AT_BRIDGE = 1
+# environment
 QT_ACCESSIBILITY = 1
 # default
 MAKEFILES := 
@@ -197,11 +203,13 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/19b305c7_4974_478e_b0de_d3b3ec101320
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a51c1be3_9d9d_4117_835d_3ce29c981593
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.89
+GNOME_TERMINAL_SERVICE = :1.2216
 # default
 SUFFIXES := 
 # environment
@@ -210,6 +218,8 @@ CHROME_DESKTOP = code-url-handler.desktop
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
@@ -217,9 +227,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 6334
+VSCODE_PID = 4359
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=14/129=11%
+# Load=109/1024=11%, Rehash=0, Collisions=16/134=12%
 
 # Pattern-specific Variable Values
 
@@ -227,9 +237,9 @@ VSCODE_PID = 6334
 
 # Directories
 
-# . (device 66307, inode 4207819): 12 files, no impossibilities.
+# . (device 66307, inode 4207819): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -272,13 +282,13 @@ server:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 145 B / avg = 8 B
-# current buf: size = 8162 B / used = 145 B / count = 18 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 166 B / avg = 8 B
+# current buf: size = 8162 B / used = 166 B / count = 20 / avg = 8 B
 
-# strcache performance: lookups = 23 / hit rate = 21%
+# strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/23=4%
-# Finished Make data base on Mon Sep 26 10:26:19 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Wed Sep 28 09:44:43 2022
 
  
 make: *** No rule to make target 'all'.  Stop.

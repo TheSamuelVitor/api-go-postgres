@@ -1,7 +1,7 @@
 package login
 
 import (
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
+	"github.com/TheSamuelVitor/api-go-postgres/models"
 	"github.com/TheSamuelVitor/api-go-postgres/pkg/services"
 	"github.com/gin-gonic/gin"
 )

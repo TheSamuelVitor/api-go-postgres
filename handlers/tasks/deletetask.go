@@ -3,7 +3,7 @@ package tasks
 import (
 	"net/http"
 
-	"github.com/TheSamuelVitor/api-go-postgres/pkg/models"
+	"github.com/TheSamuelVitor/api-go-postgres/models"
 	"github.com/gin-gonic/gin"
 )
 
