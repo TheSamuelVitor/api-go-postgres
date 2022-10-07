@@ -19,4 +19,7 @@ func novaEquipe(c *gin.Context) {
 	}
 
 	equipe.NovaEquipe(c, &req)
+	c.JSON(200, gin.H {
+		"message": "cadastro realizado com sucesso",
+	})
 }

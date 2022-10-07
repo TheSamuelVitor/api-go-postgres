@@ -19,9 +19,17 @@ func NovaEquipe(c *gin.Context, req *modelApresentacao.ReqEquipe) {
 	equipeRepo := equipe.NovoRepo(db)
 
 	str := *req.Nome
-	str = "Equipe: " + str
 
 	req.Nome = &str
 
 	equipeRepo.NovaEquipe(req)
+}
+
+
+func MostraEquipes(c *gin.Context) {
+	
+	db := database.Conectar()
+
+	defer db.Close()
+
 }

@@ -18,3 +18,15 @@ func (postgres *DBEquipe) NovaEquipe(req *modelData.Equipe) {
 		fmt.Println(err)
 	}
 }
+
+func (postgres *DBEquipe) MostraEquipes(req *modelData.Equipe) {
+
+	Equipes := []modelData.Equipe{
+		
+	}
+
+	_, err := postgres.DB.Exec(`select * from equipes`, Equipes)
+	if err != nil {
+		fmt.Println(err)
+	}
+}

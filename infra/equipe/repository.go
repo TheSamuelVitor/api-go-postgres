@@ -25,5 +25,4 @@ func (r *repositorio) NovaEquipe(req *modelApresentacao.ReqEquipe) {
 }
 
 func (r * repositorio) ListarEquipes() {
-
 }
