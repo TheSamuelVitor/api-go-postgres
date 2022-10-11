@@ -5,15 +5,11 @@ import (
 	modelApresentacao "github.com/TheSamuelVitor/api-go-postgres/domain/equipe/model"
 	"github.com/TheSamuelVitor/api-go-postgres/infra/equipe"
 
-	"github.com/gin-gonic/gin"
 )
 
-func NovaEquipe(c *gin.Context, req *modelApresentacao.ReqEquipe) {
+func NovaEquipe(req *modelApresentacao.ReqEquipe) {
 	
-	// abre a conexao com o banco de dados
 	db := database.Conectar()
-
-	// fecha a conexao ao fim da funcao
 	defer db.Close()
 
 	equipeRepo := equipe.NovoRepo(db)
@@ -26,10 +22,17 @@ func NovaEquipe(c *gin.Context, req *modelApresentacao.ReqEquipe) {
 }
 
 
-func MostraEquipes(c *gin.Context) {
+func MostraEquipes()  {
 	
 	db := database.Conectar()
-
 	defer db.Close()
+
+	equipeRepo := equipe.NovoRepo(db)
+
+	res, err  = equipeRepo.ListarEquipes()
+
+	for i := range res {
+
+	}
 
 }

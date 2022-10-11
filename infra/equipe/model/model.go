@@ -1,5 +1,6 @@
 package equipe
 
 type Equipe struct {
-	Nome *string
+	ID_Equipe *uint
+	Nome      *string
 }
