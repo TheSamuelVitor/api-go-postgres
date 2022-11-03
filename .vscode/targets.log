@@ -6,10 +6,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Oct 17 09:35:33 2022
+# Make data base, printed on Thu Nov  3 08:46:59 2022
 
 # Variables
 
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -28,8 +30,6 @@ XDG_SESSION_TYPE = x11
 NVM_INC = /home/brisa/.nvm/versions/node/v16.15.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -43,11 +43,11 @@ CURDIR := /home/brisa/Documentos/GitHub/api-go-postgres
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupport":true}
+VTE_VERSION = 6003
 # environment
-_ = /usr/share/code/code
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"75ef536b0d0cdd815d029979870c35c2.pt-br","_translationsConfigFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/tcf.json","_cacheRoot":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br","_resolvedLanguagePackCoreLocation":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/d045a5eda657f4d7b676dedbfa7aab8207f8a075","_corruptedFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:62527
+JOURNAL_STREAM = 8:61618
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -55,7 +55,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+IM_CONFIG_PHASE = 1
 # environment
 USERNAME = brisa
 # environment
@@ -65,11 +65,13 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # environment
-MANAGERPID = 2967
+_ = /usr/bin/code
+# environment
+MANAGERPID = 4042
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/brisa
+VSCODE_CWD = /home/brisa/Documentos/GitHub/api-go-postgres
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -79,7 +81,7 @@ PATH = /home/brisa/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bi
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/3196,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/3196
+SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/4262,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/4262
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
@@ -91,17 +93,15 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 6c2cad060fc2410eb824f041ae7d2bb6
+INVOCATION_ID = c5e4934a79734e31b668d1c1ee892b37
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 41722
 # automatic
 %F = $(notdir $%)
 # environment
@@ -111,9 +111,9 @@ PWD = /home/brisa/Documentos/GitHub/api-go-postgres
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3158
+SSH_AGENT_PID = 4223
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -123,13 +123,17 @@ HOME = /home/brisa
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/74b1f979648cc44d385a2286793c226e611f59e7
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
 # environment
 LOGNAME = brisa
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 NVM_CD_FLAGS = 
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -138,6 +142,10 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
+# environment
+VSCODE_GIT_IPC_HANDLE = /run/user/1001/vscode-git-6962412e7e.sock
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -145,7 +153,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 0
+SHLVL = 2
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -160,6 +168,12 @@ XDG_CURRENT_DESKTOP = Unity
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /home/brisa/Documentos/GitHub
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
 # default
 .VARIABLES := 
 # automatic
@@ -167,13 +181,17 @@ MAKE_COMMAND := make
 # environment
 LANGUAGE = pt_BR:pt:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.71.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.72.2-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /usr/share/code/code
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.72.2
 # environment
 NVM_DIR = /home/brisa/.nvm
 # automatic
@@ -183,7 +201,11 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
+NO_AT_BRIDGE = 1
+# environment
 QT_ACCESSIBILITY = 1
+# environment
+GIT_ASKPASS = /usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # automatic
@@ -191,9 +213,11 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/87b4f1f4_15ee_4101_bbe3_e41663be726a
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.98
 # default
 SUFFIXES := 
 # environment
@@ -202,16 +226,16 @@ CHROME_DESKTOP = code-url-handler.desktop
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-VSCODE_PID = 41722
+TERM = xterm-256color
+# environment
+VSCODE_PID = 14147
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=13/125=10%
+# Load=112/1024=11%, Rehash=0, Collisions=15/137=11%
 
 # Pattern-specific Variable Values
 
@@ -239,7 +263,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-10-17 08:15:21.602043071
+#  Last modified 2022-10-17 09:37:26.535859028
 #  File has been updated.
 #  Successfully updated.
 
@@ -248,7 +272,7 @@ server:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
-	go run cmd/main.go
+	go run main.go
 
 # Not a target:
 .DEFAULT:
@@ -264,14 +288,15 @@ server:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 161 B / avg = 8 B
-# current buf: size = 8162 B / used = 161 B / count = 20 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 165 B / avg = 8 B
+# current buf: size = 8162 B / used = 165 B / count = 20 / avg = 8 B
 
 # strcache performance: lookups = 25 / hit rate = 20%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Mon Oct 17 09:35:33 2022
-
  
 make: *** No rule to make target 'all'.  Stop.
 
+# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Thu Nov  3 08:46:59 2022
+
+ 
