@@ -7,6 +7,15 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// GetVideos godoc
+// @Security    bearerAuth
+// @Summary     List existing members
+// @Description Get all the existing members
+// @Tags        members
+// @Accept      json
+// @Produce     json
+// @Success     200 {array}  models.MembrocomEquipe
+// @Router      /membros [get]
 func (h handler) GetMembers(c *gin.Context) {
 	var membro []models.MembrocomEquipe
 

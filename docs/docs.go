@@ -24,7 +24,74 @@ const docTemplate = `{
     },
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
-    "paths": {},
+    "paths": {
+        "/membros": {
+            "get": {
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "description": "Get all the existing members",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "members"
+                ],
+                "summary": "List existing members",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.MembrocomEquipe"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "description": "Deletar um membro existente",
+                "tags": [
+                    "members"
+                ],
+                "summary": "Deleta membro",
+                "responses": {}
+            }
+        }
+    },
+    "definitions": {
+        "models.MembrocomEquipe": {
+            "type": "object",
+            "properties": {
+                "funcao": {
+                    "type": "string"
+                },
+                "id_equipe": {
+                    "type": "integer"
+                },
+                "id_membro": {
+                    "type": "integer"
+                },
+                "nome_equipe": {
+                    "type": "string"
+                },
+                "nome_membro": {
+                    "type": "string"
+                }
+            }
+        }
+    },
     "securityDefinitions": {
         "BasicAuth": {
             "type": "basic"

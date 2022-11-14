@@ -7,6 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// DeleteMembros godoc
+// @Security    bearerAuth
+// @Summary     Deleta membro
+// @Description Deletar um membro existente
+// @Tags        members
+// @Router      /membros [delete]
 func (h handler) DeleteMembersbyId(c *gin.Context) {
 	id := c.Param("id")
 

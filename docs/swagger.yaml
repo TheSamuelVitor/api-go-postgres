@@ -1,4 +1,18 @@
 basePath: /api/v1
+definitions:
+  models.MembrocomEquipe:
+    properties:
+      funcao:
+        type: string
+      id_equipe:
+        type: integer
+      id_membro:
+        type: integer
+      nome_equipe:
+        type: string
+      nome_membro:
+        type: string
+    type: object
 host: localhost:8080
 info:
   contact:
@@ -12,7 +26,34 @@ info:
   termsOfService: http://swagger.io/terms/
   title: Swagger Example API
   version: "1.0"
-paths: {}
+paths:
+  /membros:
+    delete:
+      description: Deletar um membro existente
+      responses: {}
+      security:
+      - bearerAuth: []
+      summary: Deleta membro
+      tags:
+      - members
+    get:
+      consumes:
+      - application/json
+      description: Get all the existing members
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.MembrocomEquipe'
+            type: array
+      security:
+      - bearerAuth: []
+      summary: List existing members
+      tags:
+      - members
 securityDefinitions:
   BasicAuth:
     type: basic
