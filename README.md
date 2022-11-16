@@ -4,7 +4,7 @@
     <img alt="PostgreSQL Logo" width="60" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png" />
 </div>
 
-# -api-go-postgres
+# api-go-postgres
 
 ## About the project
 
