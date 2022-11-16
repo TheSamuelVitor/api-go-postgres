@@ -24,6 +24,16 @@ type Info struct {
 	Tarefas     []TarefacomProjeto `json:"tarefas,omitempty"`
 }
 
+// GetVideos godoc
+// @Security    bearerToken
+// @Summary     Shows member which has the id equals to given
+// @Description Get all the existing members
+// @Param  id path int  true "ID_membro"
+// @Tags        members
+// @Accept      json
+// @Produce     json
+// @Success     200 {object}  models.MembrocomEquipe
+// @Router      /membros/{id} [get]
 func (h handler) GetMemberbyId(c *gin.Context) {
 	id := c.Param("id")
 

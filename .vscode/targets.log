@@ -6,12 +6,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Nov  3 08:46:59 2022
+# Make data base, printed on Wed Nov 16 09:37:03 2022
 
 # Variables
 
-# environment
-VSCODE_GIT_ASKPASS_MAIN = /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -39,7 +37,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/brisa/Documentos/GitHub/api-go-postgres
+CURDIR := /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # makefile
 SHELL = /bin/sh
 # environment
@@ -47,7 +45,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"75ef536b0d0cdd815d029979870c35c2.pt-br","_translationsConfigFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/tcf.json","_cacheRoot":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br","_resolvedLanguagePackCoreLocation":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/d045a5eda657f4d7b676dedbfa7aab8207f8a075","_corruptedFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:61618
+JOURNAL_STREAM = 8:59985
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -67,11 +65,11 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # environment
 _ = /usr/bin/code
 # environment
-MANAGERPID = 4042
+MANAGERPID = 3064
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/brisa/Documentos/GitHub/api-go-postgres
+VSCODE_CWD = /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -81,7 +79,7 @@ PATH = /home/brisa/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bi
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/4262,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/4262
+SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/3285,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/3285
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
@@ -93,7 +91,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = c5e4934a79734e31b668d1c1ee892b37
+INVOCATION_ID = f2f787a64344416a8bbe0cf1ab81ac26
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -107,13 +105,13 @@ SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/brisa/Documentos/GitHub/api-go-postgres
+PWD = /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 4223
+SSH_AGENT_PID = 3246
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -143,8 +141,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # environment
 MAKELEVEL := 0
 # environment
-VSCODE_GIT_IPC_HANDLE = /run/user/1001/vscode-git-6962412e7e.sock
-# environment
 COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
@@ -153,7 +149,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 2
+SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -169,11 +165,7 @@ XDG_CURRENT_DESKTOP = Unity
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/brisa/Documentos/GitHub
-# environment
-VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
-# environment
-TERM_PROGRAM = vscode
+OLDPWD = /home/brisa/Documentos/samuel/GitHub
 # default
 .VARIABLES := 
 # automatic
@@ -182,16 +174,12 @@ TERM_PROGRAM = vscode
 LANGUAGE = pt_BR:pt:en
 # environment
 VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.72.2-main.sock
-# environment
-VSCODE_GIT_ASKPASS_NODE = /usr/share/code/code
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
-# environment
-TERM_PROGRAM_VERSION = 1.72.2
 # environment
 NVM_DIR = /home/brisa/.nvm
 # automatic
@@ -201,11 +189,7 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
-# environment
-GIT_ASKPASS = /usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # automatic
@@ -213,11 +197,11 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/87b4f1f4_15ee_4101_bbe3_e41663be726a
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/247aca85_fa54_49ee_8128_b9622121e9a5
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.98
+GNOME_TERMINAL_SERVICE = :1.446
 # default
 SUFFIXES := 
 # environment
@@ -233,9 +217,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 14147
+VSCODE_PID = 19776
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=15/137=11%
+# Load=104/1024=10%, Rehash=0, Collisions=14/129=11%
 
 # Pattern-specific Variable Values
 
@@ -243,9 +227,9 @@ VSCODE_PID = 14147
 
 # Directories
 
-# . (device 66307, inode 4207819): 14 files, no impossibilities.
+# . (device 66307, inode 4207819): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -263,7 +247,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-10-17 09:37:26.535859028
+#  Last modified 2022-11-14 10:18:45.224028189
 #  File has been updated.
 #  Successfully updated.
 
@@ -288,15 +272,14 @@ server:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 165 B / avg = 8 B
-# current buf: size = 8162 B / used = 165 B / count = 20 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 170 B / avg = 8 B
+# current buf: size = 8162 B / used = 170 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 25 / hit rate = 20%
+# strcache performance: lookups = 26 / hit rate = 19%
 # hash-table stats:
+# Load=21/8192=0%, Rehash=0, Collisions=1/26=4%
+# Finished Make data base on Wed Nov 16 09:37:03 2022
+
  
 make: *** No rule to make target 'all'.  Stop.
 
-# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Thu Nov  3 08:46:59 2022
-
- 

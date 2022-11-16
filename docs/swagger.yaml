@@ -3,39 +3,39 @@ definitions:
   models.MembrocomEquipe:
     properties:
       funcao:
+        example: Desenvolvedor Backend
         type: string
       id_equipe:
+        example: 7
         type: integer
       id_membro:
+        example: 1
         type: integer
       nome_equipe:
+        example: Komanda
         type: string
       nome_membro:
+        example: Samuel
         type: string
     type: object
 host: localhost:8080
 info:
   contact:
-    email: support@swagger.io
-    name: API Support
-    url: http://www.swagger.io/support
-  description: This is a sample server celler server.
+    email: thesamuelvitor.py@gmail.com
+    name: Samuel Vitor
+    url: https://github.com/TheSamuelVitor/api-go-postgres
+  description: |-
+    Este é o backend do sistema de gerenciamento.
+    Para controle de código está sendo usado o Github
+    Link para o repositorio: https://github.com/TheSamuelVitor/api-go-postgres
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   termsOfService: http://swagger.io/terms/
-  title: Swagger Example API
+  title: API Sistema de Gerenciamento de Projetos
   version: "1.0"
 paths:
   /membros:
-    delete:
-      description: Deletar um membro existente
-      responses: {}
-      security:
-      - bearerAuth: []
-      summary: Deleta membro
-      tags:
-      - members
     get:
       consumes:
       - application/json
@@ -54,7 +54,44 @@ paths:
       summary: List existing members
       tags:
       - members
+  /membros/{id}:
+    delete:
+      description: Deletar um membro existente
+      parameters:
+      - description: ID_membro
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses: {}
+      security:
+      - bearerAuth: []
+      summary: Deleta membro
+      tags:
+      - members
+    get:
+      consumes:
+      - application/json
+      description: Get all the existing members
+      parameters:
+      - description: ID_membro
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.MembrocomEquipe'
+      security:
+      - bearerToken: []
+      summary: Shows member which has the id equals to given
+      tags:
+      - members
 securityDefinitions:
-  BasicAuth:
+  BasicToken:
     type: basic
 swagger: "2.0"

@@ -10,9 +10,10 @@ import (
 // DeleteMembros godoc
 // @Security    bearerAuth
 // @Summary     Deleta membro
+// @Param       id   path   int   true "ID_membro"
 // @Description Deletar um membro existente
 // @Tags        members
-// @Router      /membros [delete]
+// @Router      /membros/{id} [delete]
 func (h handler) DeleteMembersbyId(c *gin.Context) {
 	id := c.Param("id")
 

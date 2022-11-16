@@ -12,9 +12,9 @@ const docTemplate = `{
         "title": "{{.Title}}",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "name": "API Support",
-            "url": "http://www.swagger.io/support",
-            "email": "support@swagger.io"
+            "name": "Samuel Vitor",
+            "url": "https://github.com/TheSamuelVitor/api-go-postgres",
+            "email": "thesamuelvitor.py@gmail.com"
         },
         "license": {
             "name": "Apache 2.0",
@@ -54,6 +54,43 @@ const docTemplate = `{
                         }
                     }
                 }
+            }
+        },
+        "/membros/{id}": {
+            "get": {
+                "security": [
+                    {
+                        "bearerToken": []
+                    }
+                ],
+                "description": "Get all the existing members",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "members"
+                ],
+                "summary": "Shows member which has the id equals to given",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "ID_membro",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.MembrocomEquipe"
+                        }
+                    }
+                }
             },
             "delete": {
                 "security": [
@@ -66,6 +103,15 @@ const docTemplate = `{
                     "members"
                 ],
                 "summary": "Deleta membro",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "ID_membro",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
                 "responses": {}
             }
         }
@@ -75,25 +121,30 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "funcao": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Desenvolvedor Backend"
                 },
                 "id_equipe": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 7
                 },
                 "id_membro": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1
                 },
                 "nome_equipe": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Komanda"
                 },
                 "nome_membro": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Samuel"
                 }
             }
         }
     },
     "securityDefinitions": {
-        "BasicAuth": {
+        "BasicToken": {
             "type": "basic"
         }
     }
@@ -105,8 +156,8 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:8080",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "Swagger Example API",
-	Description:      "This is a sample server celler server.",
+	Title:            "API Sistema de Gerenciamento de Projetos",
+	Description:      "Este é o backend do sistema de gerenciamento.\nPara controle de código está sendo usado o Github\nLink para o repositorio: https://github.com/TheSamuelVitor/api-go-postgres",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
