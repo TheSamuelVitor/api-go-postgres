@@ -21,16 +21,14 @@ import (
 	"github.com/swaggo/gin-swagger"
 )
 
-// @title          API Sistema de Gerenciamento de Projetos
+// @title          Swagger Example API
 // @version        1.0
-// @description    Este é o backend do sistema de gerenciamento.
-// @description    Para controle de código está sendo usado o Github
-// @description    Link para o repositorio: https://github.com/TheSamuelVitor/api-go-postgres
+// @description    This is a sample server celler server.
 // @termsOfService http://swagger.io/terms/
 
-// @contact.name  Samuel Vitor
-// @contact.url   https://github.com/TheSamuelVitor/api-go-postgres
-// @contact.email thesamuelvitor.py@gmail.com
+// @contact.name  API Support
+// @contact.url   http://www.swagger.io/support
+// @contact.email support@swagger.io
 
 // @license.name Apache 2.0
 // @license.url  http://www.apache.org/licenses/LICENSE-2.0.html
@@ -38,7 +36,7 @@ import (
 // @host     localhost:8080
 // @BasePath /api/v1
 
-// @securityDefinitions.basic BasicToken
+// @securityDefinitions.basic BasicAuth
 
 func main() {
 	viper.SetConfigFile("./pkg/common/envs/.env")
@@ -54,7 +52,7 @@ func main() {
 	docs.SwaggerInfo.Description = "Documentacao da API"
 	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Host = "localhost:3000"
-	docs.SwaggerInfo.BasePath = ""
+	docs.SwaggerInfo.BasePath = "/v2"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	// use ginSwagger middleware to serve the API docs
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))

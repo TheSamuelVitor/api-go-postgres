@@ -1,13 +1,13 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Este é o backend do sistema de gerenciamento.\nPara controle de código está sendo usado o Github\nLink para o repositorio: https://github.com/TheSamuelVitor/api-go-postgres",
-        "title": "API Sistema de Gerenciamento de Projetos",
+        "description": "This is a sample server celler server.",
+        "title": "Swagger Example API",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "name": "Samuel Vitor",
-            "url": "https://github.com/TheSamuelVitor/api-go-postgres",
-            "email": "thesamuelvitor.py@gmail.com"
+            "name": "API Support",
+            "url": "http://www.swagger.io/support",
+            "email": "support@swagger.io"
         },
         "license": {
             "name": "Apache 2.0",
@@ -47,43 +47,6 @@
                         }
                     }
                 }
-            }
-        },
-        "/membros/{id}": {
-            "get": {
-                "security": [
-                    {
-                        "bearerToken": []
-                    }
-                ],
-                "description": "Get all the existing members",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "tags": [
-                    "members"
-                ],
-                "summary": "Shows member which has the id equals to given",
-                "parameters": [
-                    {
-                        "type": "integer",
-                        "description": "ID_membro",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "$ref": "#/definitions/models.MembrocomEquipe"
-                        }
-                    }
-                }
             },
             "delete": {
                 "security": [
@@ -96,15 +59,6 @@
                     "members"
                 ],
                 "summary": "Deleta membro",
-                "parameters": [
-                    {
-                        "type": "integer",
-                        "description": "ID_membro",
-                        "name": "id",
-                        "in": "path",
-                        "required": true
-                    }
-                ],
                 "responses": {}
             }
         }
@@ -114,30 +68,25 @@
             "type": "object",
             "properties": {
                 "funcao": {
-                    "type": "string",
-                    "example": "Desenvolvedor Backend"
+                    "type": "string"
                 },
                 "id_equipe": {
-                    "type": "integer",
-                    "example": 7
+                    "type": "integer"
                 },
                 "id_membro": {
-                    "type": "integer",
-                    "example": 1
+                    "type": "integer"
                 },
                 "nome_equipe": {
-                    "type": "string",
-                    "example": "Komanda"
+                    "type": "string"
                 },
                 "nome_membro": {
-                    "type": "string",
-                    "example": "Samuel"
+                    "type": "string"
                 }
             }
         }
     },
     "securityDefinitions": {
-        "BasicToken": {
+        "BasicAuth": {
             "type": "basic"
         }
     }
