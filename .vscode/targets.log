@@ -8,16 +8,10 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-<<<<<<< HEAD
-# Make data base, printed on Thu Nov 17 08:15:58 2022
-=======
-# Make data base, printed on Thu Nov  3 08:46:59 2022
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+# Make data base, printed on Thu Jan 19 11:28:45 2023
 
 # Variables
 
-# environment
-VSCODE_GIT_ASKPASS_MAIN = /usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -45,19 +39,15 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/brisa/Documentos/GitHub/api-go-postgres
+CURDIR := /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # makefile
 SHELL = /bin/sh
 # environment
 VTE_VERSION = 6003
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"75ef536b0d0cdd815d029979870c35c2.pt-br","_translationsConfigFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/tcf.json","_cacheRoot":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br","_resolvedLanguagePackCoreLocation":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/d045a5eda657f4d7b676dedbfa7aab8207f8a075","_corruptedFile":"/home/brisa/.config/Code/clp/75ef536b0d0cdd815d029979870c35c2.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"42116b32531a7db8af7fe109cace42ae.pt-br","_translationsConfigFile":"/home/brisa/.config/Code/clp/42116b32531a7db8af7fe109cace42ae.pt-br/tcf.json","_cacheRoot":"/home/brisa/.config/Code/clp/42116b32531a7db8af7fe109cace42ae.pt-br","_resolvedLanguagePackCoreLocation":"/home/brisa/.config/Code/clp/42116b32531a7db8af7fe109cace42ae.pt-br/5235c6bb189b60b01b1f49062f4ffa42384f8c91","_corruptedFile":"/home/brisa/.config/Code/clp/42116b32531a7db8af7fe109cace42ae.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
-<<<<<<< HEAD
-JOURNAL_STREAM = 8:50702
-=======
-JOURNAL_STREAM = 8:61618
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+JOURNAL_STREAM = 8:64310
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -77,15 +67,11 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1001/bus
 # environment
 _ = /usr/bin/code
 # environment
-<<<<<<< HEAD
-MANAGERPID = 2544
-=======
-MANAGERPID = 4042
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+MANAGERPID = 3143
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/brisa/Documentos/GitHub/api-go-postgres
+VSCODE_CWD = /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -95,11 +81,7 @@ PATH = /home/brisa/.nvm/versions/node/v16.15.1/bin:/usr/local/sbin:/usr/local/bi
 # environment
 GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
 # environment
-<<<<<<< HEAD
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/2765,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/2765
-=======
-SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/4262,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/4262
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+SESSION_MANAGER = local/brisa-OptiPlex-5090:@/tmp/.ICE-unix/3364,unix/brisa-OptiPlex-5090:/tmp/.ICE-unix/3364
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
@@ -111,11 +93,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-<<<<<<< HEAD
-INVOCATION_ID = 522bfcfc904a4c0fb67e84f326ae3f69
-=======
-INVOCATION_ID = c5e4934a79734e31b668d1c1ee892b37
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+INVOCATION_ID = 0550f4f781ae4e138a66fc66e63d28f8
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -129,17 +107,13 @@ SSH_AUTH_SOCK = /run/user/1001/keyring/ssh
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/brisa/Documentos/GitHub/api-go-postgres
+PWD = /home/brisa/Documentos/samuel/GitHub/api-go-postgres
 # default
 .LOADED := 
 # environment
-<<<<<<< HEAD
-SSH_AGENT_PID = 2726
-=======
-SSH_AGENT_PID = 4223
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+SSH_AGENT_PID = 3325
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -151,7 +125,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075
+VSCODE_CODE_CACHE_PATH = /home/brisa/.config/Code/CachedData/5235c6bb189b60b01b1f49062f4ffa42384f8c91
 # environment
 LOGNAME = brisa
 # environment
@@ -169,8 +143,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # environment
 MAKELEVEL := 0
 # environment
-VSCODE_GIT_IPC_HANDLE = /run/user/1001/vscode-git-6962412e7e.sock
-# environment
 COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
@@ -179,7 +151,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 2
+SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -195,11 +167,7 @@ XDG_CURRENT_DESKTOP = Unity
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/brisa/Documentos/GitHub
-# environment
-VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
-# environment
-TERM_PROGRAM = vscode
+OLDPWD = /home/brisa/Documentos/samuel/GitHub/api-go-postgres/domain
 # default
 .VARIABLES := 
 # automatic
@@ -207,17 +175,13 @@ TERM_PROGRAM = vscode
 # environment
 LANGUAGE = pt_BR:pt:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.72.2-main.sock
-# environment
-VSCODE_GIT_ASKPASS_NODE = /usr/share/code/code
+VSCODE_IPC_HOOK = /run/user/1001/vscode-5bff865f-1.74.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
-# environment
-TERM_PROGRAM_VERSION = 1.72.2
 # environment
 NVM_DIR = /home/brisa/.nvm
 # automatic
@@ -227,11 +191,7 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
-# environment
-GIT_ASKPASS = /usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # automatic
@@ -239,21 +199,11 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-<<<<<<< HEAD
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d6a3d700_564d_4b98_9fce_4f2774784c89
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/46195791_2cbb_4935_9bf4_9c7a15c0bfe5
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.91
-=======
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/87b4f1f4_15ee_4101_bbe3_e41663be726a
-# automatic
-^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.98
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+GNOME_TERMINAL_SERVICE = :1.3678
 # default
 SUFFIXES := 
 # environment
@@ -262,8 +212,6 @@ CHROME_DESKTOP = code-url-handler.desktop
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
@@ -271,15 +219,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-<<<<<<< HEAD
-VSCODE_PID = 7357
+VSCODE_PID = 198005
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=14/131=11%
-=======
-VSCODE_PID = 14147
-# variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=15/137=11%
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+# Load=104/1024=10%, Rehash=0, Collisions=14/129=11%
 
 # Pattern-specific Variable Values
 
@@ -287,9 +229,9 @@ VSCODE_PID = 14147
 
 # Directories
 
-# . (device 66307, inode 4207819): 14 files, no impossibilities.
+# . (device 66307, inode 4207561): 20 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -307,11 +249,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-<<<<<<< HEAD
-#  Last modified 2022-11-16 10:02:33.860758545
-=======
-#  Last modified 2022-10-17 09:37:26.535859028
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
+#  Last modified 2023-01-19 11:05:37.033010051
 #  File has been updated.
 #  Successfully updated.
 
@@ -328,50 +266,20 @@ server:
 #  Modification time never checked.
 #  File has not been updated.
 
-docs:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
-	swag init
-
-swag:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
-	export PATH=$(go env GOPATH)/bin:$PATH
-
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-<<<<<<< HEAD
-# strcache buffers: 1 (0) / strings = 22 / storage = 175 B / avg = 7 B
- 
-# current buf: size = 8162 B / used = 175 B / count = 22 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 223 B / avg = 8 B
+# current buf: size = 8162 B / used = 223 B / count = 26 / avg = 8 B
 
-# strcache performance: lookups = 30 / hit rate = 26%
+# strcache performance: lookups = 31 / hit rate = 16%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/30=3%
-# Finished Make data base on Thu Nov 17 08:15:58 2022
+# Load=26/8192=0%, Rehash=0, Collisions=2/31=6%
+# Finished Make data base on Thu Jan 19 11:28:45 2023
 
  
-=======
-# strcache buffers: 1 (0) / strings = 20 / storage = 165 B / avg = 8 B
-# current buf: size = 8162 B / used = 165 B / count = 20 / avg = 8 B
-
-# strcache performance: lookups = 25 / hit rate = 20%
-# hash-table stats:
- 
-make: *** No rule to make target 'all'.  Stop.
-
-# Load=20/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Thu Nov  3 08:46:59 2022
-
- 
->>>>>>> parent of 62b931c (:books: docs: add new documentation on member routes)
